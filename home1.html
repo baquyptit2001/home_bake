@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bánh nhà làm, ngon như nhà làm</title>
+  <link rel="icon" href="title.png" type="image/icon type">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="uicons-regular-rounded.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <script src="js.js"></script>
+  <script src="https://kit.fontawesome.com/9fd97b7f3f.js" crossorigin="anonymous"></script>
+  <script data-search-pseudo-elements defer src="https://use.fontawesome.com/releases/latest/js/all.js"
+    integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous">
+  </script>
+  <style>
+    #myDiv {
+      display: none;
+    }
+
+    .preloader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100%;
+      background: #fff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      transition: opacity 0.3s linear;
+    }
+    .w3-teal {
+      display: none;
+  }
+  
+  #mySidebar {
+      box-shadow: 0 0 0 10000px rgba(0, 0, 0, .50);
+  }
+  
+  @media (max-width: 1199.98px) {
+      header {
+          display: none;
+      }
+  
+      .w3-teal {
+          display: block;
+          background-color: #5e5a54 !important;
+      }
+  
+      .res-head-btn {
+          background-color: #5e5a54 !important;
+          justify-items: end;
+          font-size: 25px;
+      }
+  
+      .res-head-btn p {
+          margin: 0;
+          align-self: center;
+      }
+  
+      .w3-sidebar {
+          background-color: #5e5a54 !important;
+      }
+  
+      .w3-sidebar .top-header {
+          height: 100% !important;
+          background-color: #5e5a54 !important;
+          z-index: 999999999999 !important;
+      }
+  
+      .w3-sidebar .top-header ul {
+          list-style: none;
+          padding-left: 0;
+      }
+  
+      .w3-sidebar .top-header ul li {
+          margin-left: 0;
+      }
+  }
+  </style>
+</head>
+
+<body onload="myFunction()">
+  <div id="loader">
+    <div class="preloader">
+
+      <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
+        preserveAspectRatio="xMidYMid" class="lds-ripple" style="background:0 0">
+        <circle cx="50" cy="50" r="4.719" fill="none" stroke="#c8aa7b" stroke-width="2">
+          <animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1"
+            begin="-1.5s" repeatCount="indefinite" />
+          <animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3"
+            keySplines="0.2 0 0.8 1" begin="-1.5s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="50" cy="50" r="27.591" fill="none" stroke="#c8aa7b" stroke-width="2">
+          <animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1"
+            begin="0s" repeatCount="indefinite" />
+          <animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3"
+            keySplines="0.2 0 0.8 1" begin="0s" repeatCount="indefinite" />
+        </circle>
+      </svg>
+
+    </div>
+  </div>
+  <script>
+    var myVar;
+
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+  </script>
+  <div style="display:none;" id="myDiv" class="animate__animated animate__fadeIn">
+    <div id=" wrap">
+      <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:900px">
+
+          <div class="w3-center acount-header" onclick="document.getElementById('id01').style.display='none'">
+            <span class="modal-login-title">Login</span>
+          </div>
+          <div class="w3-center account-login-form">
+            <div class="account-login-form-title">
+              <strong>Welcome back!</strong>
+              <p>Login by entering the information below.</p>
+            </div>
+            <div class="account-login-form-input">
+              <input type="email" placeholder="Email address *">
+              <input type="password" placeholder="Password *">
+            </div>
+            <div class="account-login-form-option">
+              <div class="d-flex justify-content-between">
+                <span><input type="radio" name="" id="remember-me"><span style="padding-left: 5px;"></span><label
+                    for="remember-me">Remember me</label></span>
+                <span>Forgoten password ?</span>
+              </div>
+            </div>
+            <div class="account-login-form-btn">
+              <button>Continue</button>
+            </div>
+            <p class="account-login-form-create">
+              Don't have account ?. <span><a role="button" id="register-btn">Create on here</a></span>
+            </p>
+          </div>
+          <div class="w3-center account-register-form pb-4">
+            <div class="account-login-form-title">
+              <strong>Sign Up</strong>
+              <p>It's quick and easy.</p>
+            </div>
+            <div class="account-login-form-input">
+              <input type="email" placeholder="Email address *">
+              <input type="password" placeholder="Password *">
+              <input type="password" placeholder="Confirm Password *">
+              <input type="date" placeholder="Confirm Password *">
+            </div>
+            <div class="account-regis-form-option mt-3">
+              <input type="radio" id="agree-term">
+              <label for="agree-term">Agree to our Terms, Data Policy and Cookie Policy</label>
+            </div>
+            <div class="account-login-form-btn mt-4">
+              <button id="sign-up-btn">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w3-sidebar w3-bar-block w3-border-right animate__animated animate__fadeIn animate__faster"
+        style="display:none" id="mySidebar">
+        <button class="res-head-btn w3-bar-item w3-large d-flex justify-content-between"><a href="#" class=""><img
+              src="Brand.png" alt=""></a>
+          <p class="side-close" onclick="w3_close()">X</p>
+        </button>
+        <hr>
+        <div class="top-header">
+          <ul class="ml-auto">
+            <li class="nav-item">
+              <a class="nav-link on-page" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <!-- Button trigger modal -->
+              <a class="nav-link" onclick="document.getElementById('id01').style.display='block'">Account</a>
+
+              <!-- Modal -->
+            </li>
+            <li class="nav-item dropdown left-bor-header">
+              <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-shopping-bag"></i>
+                <span class="cart-quantity">2</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="w3-teal">
+        <button class="w3-button w3-teal w3-xlarge side-open" onclick="w3_open()">☰</button>
+      </div>
+      <header>
+        <div class="top-header">
+          <nav class="navbar navbar-expand-lg">
+            <a href="#" class="navbar-brand"><img src="Brand.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link on-page" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <!-- Button trigger modal -->
+                  <a class="nav-link" id="header-account-btn"
+                    onclick="document.getElementById('id01').style.display='block'">Account</a>
+
+                  <!-- Modal -->
+
+
+                </li>
+                <li class="nav-item left-bor-header">
+                  <form action="">
+                    <input type="search">
+                    <i class="fa fa-search"></i>
+                  </form>
+                </li>
+                <li class="nav-item dropdown left-bor-header">
+                  <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-quantity">2</span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section class="home-page-slider">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100 mx-auto" src="img/slide.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 mx-auto" src="img/slide1.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 mx-auto" src="img/slide2.jpg" alt="Third slide">
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <main>
+        <section>
+          <div class="container">
+            <div class="new-product-title text-center">
+              <strong>
+                New product
+              </strong>
+              <div class="new-product-title-des justify-content-center d-flex w-100">
+                <div class="new-product-title-des-line"></div>
+                <small>OUR BEST CAKE</small>
+                <div class="new-product-title-des-line"></div>
+              </div>
+            </div>
+            <div class="new-product-breadcum">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center breadcrumb-new-product">
+                  <li class="breadcrumb-item bread-crumb-on-page"><a href="#">Cake</a></li>
+                  <li class="breadcrumb-item"><a href="#">Bread</a></li>
+                  <li class="breadcrumb-item"><a href="#">Birthday cake</a></li>
+                  <li class="breadcrumb-item"><a href="#">Wedding cake</a></li>
+                </ol>
+              </nav>
+            </div>
+            <div class="new-product-btn text-center">
+              <button class="btn button"><span>View all product</span></button>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-2 col-md-4 col-sm-6 new-product-info-border">
+                <div class="new-product-info">
+                  <a href="#"><img src="img/french-bread.jpg" alt="" class="w-100"></a>
+                  <div class="new-product-price-name text-center">
+                    <p class="new-product-name"><a href="#">French bread</a></p>
+                    <p class="new-product-price">$7.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6 new-product-info-border">
+                <div class="new-product-info">
+                  <a href="#"><img src="img/oatmeal-muffins.jpg" alt="" class="w-100"></a>
+                  <div class="new-product-price-name text-center">
+                    <p class="new-product-name"><a href="#">Oatmeal muffins</a></p>
+                    <p class="new-product-price">$7.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6 new-product-info-border">
+                <div class="new-product-info">
+                  <a href="#"><img src="img/whole-wheat-bread.jpg" alt="" class="w-100"></a>
+                  <div class="new-product-price-name text-center">
+                    <p class="new-product-name"><a href="#">Whole grain bread</a></p>
+                    <p class="new-product-price">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6 new-product-info-border">
+                <div class="new-product-info">
+                  <a href="#"><img src="img/Croissants.jpg" alt="" class="w-100"></a>
+                  <div class="new-product-price-name text-center">
+                    <p class="new-product-name"><a href="#">Croissants</a></p>
+                    <p class="new-product-price">$4.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6 new-product-info-border">
+                <div class="new-product-info">
+                  <a href="#"><img src="img/swiss-roll.jpg" alt="" class="w-100"></a>
+                  <div class="new-product-price-name text-center">
+                    <p class="new-product-name"><a href="#">Swiss roll</a></p>
+                    <p class="new-product-price">$15.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6 new-product-info-border">
+                <div class="new-product-info">
+                  <a href="#"><img src="img/pretzel.jpg" alt="" class="w-100"></a>
+                  <div class="new-product-price-name text-center">
+                    <p class="new-product-name"><a href="#">Pretzel</a></p>
+                    <p class="new-product-price">$6.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6 new-product-info-border">
+                <div class="new-product-info">
+                  <a href="#"><img src="img/french-bread.jpg" alt="" class="w-100"></a>
+                  <div class="new-product-price-name text-center">
+                    <p class="new-product-name"><a href="#">French bread</a></p>
+                    <p class="new-product-price">$7.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6 new-product-info-border">
+                <div class="new-product-info">
+                  <a href="#"><img src="img/oatmeal-muffins.jpg" alt="" class="w-100"></a>
+                  <div class="new-product-price-name text-center">
+                    <p class="new-product-name"><a href="#">Oatmeal muffins</a></p>
+                    <p class="new-product-price">$7.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6 new-product-info-border">
+                <div class="new-product-info">
+                  <a href="#"><img src="img/whole-wheat-bread.jpg" alt="" class="w-100"></a>
+                  <div class="new-product-price-name text-center">
+                    <p class="new-product-name"><a href="#">Whole grain bread</a></p>
+                    <p class="new-product-price">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6 new-product-info-border">
+                <div class="new-product-info">
+                  <a href="#"><img src="img/Croissants.jpg" alt="" class="w-100"></a>
+                  <div class="new-product-price-name text-center">
+                    <p class="new-product-name"><a href="#">Croissants</a></p>
+                    <p class="new-product-price">$4.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6 new-product-info-border">
+                <div class="new-product-info">
+                  <a href="#"><img src="img/swiss-roll.jpg" alt="" class="w-100"></a>
+                  <div class="new-product-price-name text-center">
+                    <p class="new-product-name"><a href="#">Swiss roll</a></p>
+                    <p class="new-product-price">$15.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6 new-product-info-border">
+                <div class="new-product-info">
+                  <a href="#"><img src="img/pretzel.jpg" alt="" class="w-100"></a>
+                  <div class="new-product-price-name text-center">
+                    <p class="new-product-name"><a href="#">Pretzel</a></p>
+                    <p class="new-product-price">$6.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="this-week-offer">
+          <div class="container-fluid">
+            <div class="this-week-offer-title text-center">
+              <strong>This week offter</strong>
+              <div class="new-product-title-des justify-content-center d-flex w-100">
+                <div class="new-product-title-des-line"></div>
+                <small class="white-this-week-offer-title">GET 30% OF YOUR ORDER OF $100 OR MORE</small>
+                <div class="new-product-title-des-line"></div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="this-week-offer-deal">
+              <div class="row this-week-offer-page">
+                <div class="col-lg-6 gray-side order-lg-1">
+                  <img src="img/doge.jpg" alt="" class="h-100 w-100">
+                </div>
+                <div class="col-lg-6 order-lg-0">
+                  <div class="this-week-offer-combo">
+                    <strong class="w-95">Combo Box</strong>
+                    <p class="this-week-offer-combo-price w-95">
+                      <span>$8.75 </span><span style="padding-left: 5px;"></span>Now only $2.75
+                    </p>
+                    <p class="this-week-offer-combo-price-desc w-95">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis voluptate qui sequi, ut dolor
+                      laboriosam aliquam nulla facilis doloribus doloremque earum ipsum quasi, asperiores exercitationem
+                      enim quis velit odit illum.
+                    </p>
+                    <div class="this-week-offer-timmer w-95">
+                      <div class="row">
+                        <div class="col-6 col-sm-3">
+                          <div class="this-week-offer-timmer-d text-center">
+                            <div class="this-week-offer-timmer-d-text">
+                              <p class="this-week-offer-timmer-dn mb-0 align-self-center" id="daysc"></p>
+                              <p class="this-week-offer-timmer-dc mb-0">DAY(s)</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-sm-3">
+                          <div class="this-week-offer-timmer-d text-center">
+                            <div class="this-week-offer-timmer-d-text">
+                              <p class="this-week-offer-timmer-dn mb-0 align-self-center" id="hoursc"></p>
+                              <p class="this-week-offer-timmer-dc mb-0">HOUR(s)</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-sm-3">
+                          <div class="this-week-offer-timmer-d text-center">
+                            <div class="this-week-offer-timmer-d-text">
+                              <p class="this-week-offer-timmer-dn mb-0 align-self-center" id="minutesc"></p>
+                              <p class="this-week-offer-timmer-dc mb-0">MINUTE(s)</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-sm-3">
+                          <div class="this-week-offer-timmer-d text-center">
+                            <div class="this-week-offer-timmer-d-text">
+                              <p class="this-week-offer-timmer-dn mb-0 align-self-center" id="secondsc"></p>
+                              <p class="this-week-offer-timmer-dc mb-0">SECOND(s)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-center">
+                      <button class="this-week-offer-add" type="submit"><span>Add to cart</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="this-week-offer-deal-navi">
+                <div class="row justify-content-around">
+                  <div class="col-8">
+                    <div class="row">
+                      <div class="col-6 this-week-offer-deal-navi-pre">
+                        <a href=""><i class="fas fa-arrow-left"></i><span style="padding-left: 15px;"></span>PREVIOUS
+                          PRODUCT</a>
+                      </div>
+                      <div class="col-6 this-week-offer-deal-navi-pre">
+                        <a href=""></span>NEXT PRODUCT<span style="padding-left: 15px;"></span><i
+                            class="fas fa-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="services-we-offer">
+          <div class="container">
+            <div class="services-we-offer-title text-center">
+              <strong>Services we offer</strong>
+              <div class="services-we-offer-des justify-content-center d-flex w-100">
+                <div class="services-we-offer-desc-line"></div>
+                <small>OUR BEST CAKE</small>
+                <div class="services-we-offer-desc-line"></div>
+              </div>
+            </div>
+            <div class="services-we-offer-info">
+              <div class="row">
+                <div class="col-lg-3 col-md-6 services-we-offer-border text-center">
+                  <img src="img/services-off.jpg" alt="" class="w-33 services-offer-thumb">
+                  <div class="services-offer-desc">
+                    <strong>Sweet’s and stuff</strong>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia magni
+                      dolores
+                      eos qui ratione </p>
+                    <a href="#">READ MORE</a>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 services-we-offer-border text-center">
+                  <img src="img/services-off1.jpg" alt="" class="w-33 services-offer-thumb">
+                  <div class="services-offer-desc">
+                    <strong>Kitchen tools</strong>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia magni
+                      dolores
+                      eos qui ratione </p>
+                    <a href="#">READ MORE</a>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 services-we-offer-border text-center">
+                  <img src="img/services-off2.jpg" alt="" class="w-33 services-offer-thumb">
+                  <div class="services-offer-desc">
+                    <strong>Topping cream</strong>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia magni
+                      dolores
+                      eos qui ratione </p>
+                    <a href="#">READ MORE</a>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 services-we-offer-border text-center">
+                  <img src="img/services-off3.jpg" alt="" class="w-33 services-offer-thumb">
+                  <div class="services-offer-desc">
+                    <strong>Plain flour</strong>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia magni
+                      dolores
+                      eos qui ratione </p>
+                    <a href="#">READ MORE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="product-for-you">
+          <div class="container">
+            <div class="product-for-you-title text-center">
+              <strong>
+                Product for you
+              </strong>
+              <div class="product-for-you-title-desc justify-content-center d-flex w-100">
+                <div class="product-for-you-title-desc-line"></div>
+                <small>NEW PRODUCT</small>
+                <div class="product-for-you-title-desc-line"></div>
+              </div>
+            </div>
+            <div class="product-for-you-info">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="row">
+                    <div class="col-lg-2 col-md-3 col-4 product-for-you-info-thumb">
+                      <img src="img/product-for-you.jpg" alt="" class="w-100">
+                    </div>
+                    <div class="col-lg-10 col-md-9 col-8 product-for-you-info-desc">
+                      <strong class="product-for-you-info-desc-name">
+                        <a href="#">Doughnut</a>
+                      </strong>
+                      <p class="product-for-you-info-desc-info">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.
+                      </p>
+                      <p class="product-for-you-info-desc-price">
+                        $7.00
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="row">
+                    <div class="col-lg-2 col-md-3 col-4 product-for-you-info-thumb">
+                      <img src="img/product-for-you1.jpg" alt="" class="w-100">
+                    </div>
+                    <div class="col-lg-10 col-md-9 col-8 product-for-you-info-desc">
+                      <strong class="product-for-you-info-desc-name">
+                        <a href="#">Croissants</a>
+                      </strong>
+                      <p class="product-for-you-info-desc-info">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.
+                      </p>
+                      <p class="product-for-you-info-desc-price">
+                        $22.00
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="row">
+                    <div class="col-lg-2 col-md-3 col-4 product-for-you-info-thumb align-self-center">
+                      <img src="img/product-for-you2.jpg" alt="" class="w-100">
+                    </div>
+                    <div class="col-lg-10 col-md-9 col-8 product-for-you-info-desc">
+                      <hr>
+                      <strong class="product-for-you-info-desc-name">
+                        <a href="#">Chiffon cake</a>
+                      </strong>
+                      <p class="product-for-you-info-desc-info">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.
+                      </p>
+                      <p class="product-for-you-info-desc-price">
+                        $5.00
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="row">
+                    <div class="col-lg-2 col-md-3 col-4 product-for-you-info-thumb align-self-center">
+                      <img src="img/product-for-you3.jpg" alt="" class="w-100">
+                    </div>
+                    <div class="col-lg-10 col-md-9 col-8 product-for-you-info-desc">
+                      <hr>
+                      <strong class="product-for-you-info-desc-name">
+                        <a href="#">Swiss roll</a>
+                      </strong>
+                      <p class="product-for-you-info-desc-info">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.
+                      </p>
+                      <p class="product-for-you-info-desc-price">
+                        $12.00
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="row">
+                    <div class="col-lg-2 col-md-3 col-4 product-for-you-info-thumb align-self-center">
+                      <img src="img/product-for-you4.jpg" alt="" class="w-100">
+                    </div>
+                    <div class="col-lg-10 col-md-9 col-8 product-for-you-info-desc">
+                      <hr>
+                      <strong class="product-for-you-info-desc-name">
+                        <a href="#">French bread</a>
+                      </strong>
+                      <p class="product-for-you-info-desc-info">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.
+                      </p>
+                      <p class="product-for-you-info-desc-price">
+                        $17.00
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="row">
+                    <div class="col-lg-2 col-md-3 col-4 product-for-you-info-thumb align-self-center">
+                      <img src="img/product-for-you5.jpg" alt="" class="w-100">
+                    </div>
+                    <div class="col-lg-10 col-md-9 col-8 product-for-you-info-desc">
+                      <hr>
+                      <strong class="product-for-you-info-desc-name">
+                        <a href="#">Challah</a>
+                      </strong>
+                      <p class="product-for-you-info-desc-info">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.
+                      </p>
+                      <p class="product-for-you-info-desc-price">
+                        $9.00
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="love-our-customers">
+          <div class="container">
+            <div class="love-our-customers-title text-center">
+              <strong>
+                We love our customers
+              </strong>
+              <div class="love-our-customers-title-desc justify-content-center d-flex w-100">
+                <div class="love-our-customers-title-desc-line"></div>
+                <small>Testimonials</small>
+                <div class="love-our-customers-title-desc-line"></div>
+              </div>
+            </div>
+            <div class="love-our-customers-info">
+              <div class="row">
+                <div class="col-8 offset-2">
+                  <div class="love-our-customers-border w-100">
+                  </div>
+                </div>
+              </div>
+              <div class="row love-our-customers-info-slide">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"><img
+                        src="img/sontung.jpg" alt="" class="w-100"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"><img src="img/Yasuo.jpg" alt=""
+                        class="w-100"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"><img src="img/beoj.jpg" alt=""
+                        class="w-100"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="col-10 offset-1">
+                        <div class="row justify-content-center">
+                          <div class="col-2 text-center love-our-customers-ava">
+                            <img src="img/sontung.jpg" alt="" class="w-75">
+                          </div>
+                        </div>
+                        <div class="love-our-customers-content text-center">
+                          <p class="love-our-customers-content-text">“ Sed ut perspiciatis unde omnis iste natus error
+                            sit
+                            voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                            inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+                            voluptatem quia voluptas sit aspernatur aut odit ”</p>
+                          <p class="love-our-customers-content-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </p>
+                          <div class="love-our-customers-content-author">
+                            <p class="love-our-customers-content-author-name">Sơn Tùng M-TP</p>
+                            <p class="love-our-customers-content-author-info">Founder at MTP Entertainment</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="col-10 offset-1">
+                        <div class="row justify-content-center">
+                          <div class="col-2 text-center love-our-customers-ava">
+                            <img src="img/Yasuo.jpg" alt="" class="w-75">
+                          </div>
+                        </div>
+                        <div class="love-our-customers-content text-center">
+                          <p class="love-our-customers-content-text">“ Sed ut perspiciatis unde omnis iste natus error
+                            sit
+                            voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                            inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+                            voluptatem quia voluptas sit aspernatur aut odit ”</p>
+                          <p class="love-our-customers-content-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </p>
+                          <div class="love-our-customers-content-author">
+                            <p class="love-our-customers-content-author-name">Leonardo Yasuo</p>
+                            <p class="love-our-customers-content-author-info">Mid laner</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="col-10 offset-1">
+                        <div class="row justify-content-center">
+                          <div class="col-2 text-center love-our-customers-ava">
+                            <img src="img/beoj.jpg" alt="" class="w-75">
+                          </div>
+                        </div>
+                        <div class="love-our-customers-content text-center">
+                          <p class="love-our-customers-content-text">“ Sed ut perspiciatis unde omnis iste natus error
+                            sit
+                            voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                            inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+                            voluptatem quia voluptas sit aspernatur aut odit ”</p>
+                          <p class="love-our-customers-content-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </p>
+                          <div class="love-our-customers-content-author">
+                            <p class="love-our-customers-content-author-name">Teacher Three</p>
+                            <p class="love-our-customers-content-author-info">0173 The Spy</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <i class="fas fa-chevron-left love-our-customers-control"></i>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <i class="fas fa-chevron-right love-our-customers-control"></i>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="from-our-blog">
+          <div class="container">
+            <div class="from-our-blog-title text-center">
+              <strong>
+                From our blog
+              </strong>
+              <div class="from-our-blog-title-desc justify-content-center d-flex w-100">
+                <div class="from-our-blog-title-desc-line"></div>
+                <small>KEEP UP TO DATE WITH US</small>
+                <div class="from-our-blog-title-desc-line"></div>
+              </div>
+            </div>
+            <div class="from-our-blog-info">
+              <div class="row justify-content-around">
+                <div class="col-lg-4 col-md-6">
+                  <div class="from-our-blog-info-thumb">
+                    <a href="#"><img src="img/from-our-blog.jpg" alt=""
+                        class="w-100 from-our-blog-info-thumb-normal"></a>
+                    <a href="#"><img src="img/from-our-blog-hover.jpg" alt=""
+                        class="w-100 from-our-blog-info-thumb-hover"></a>
+                    <p class="from-our-blog-info-thumb-info">
+                      <i class="far fa-clock"></i>
+                      Jan 20, 2020
+                      <span style="padding-left: 10px; padding-right: 10px;">|</span>
+                      <i class="far fa-comment"></i>
+                      Comment: 2
+                    </p>
+                    <hr>
+                  </div>
+                  <div class="from-our-blog-info-title">
+                    <a href="#">
+                      <h3>How to make cake: 9 steps (with pictures)</h3>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="from-our-blog-info-thumb">
+                    <a href="#"><img src="img/from-our-blog1.jpg" alt="" class="w-100"></a>
+                    <a href="#"><img src="img/from-our-blog1-hover.jpg" alt=""
+                        class="w-100 from-our-blog-info-thumb-hover"></a>
+                    <p class="from-our-blog-info-thumb-info">
+                      <i class="far fa-clock"></i>
+                      Jan 20, 2020
+                      <span style="padding-left: 10px; padding-right: 10px;">|</span>
+                      <i class="far fa-comment"></i>
+                      Comment: 2
+                    </p>
+                    <hr>
+                  </div>
+                  <div class="from-our-blog-info-title">
+                    <a href="#">
+                      <h3>Grandmother's buttermilk cornbread</h3>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="from-our-blog-info-thumb">
+                    <a href="#"><img src="img/from-our-blog2.jpg" alt="" class="w-100"></a>
+                    <a href="#"><img src="img/from-our-blog2-hover.jpg" alt=""
+                        class="w-100 from-our-blog-info-thumb-hover"></a>
+                    <p class="from-our-blog-info-thumb-info">
+                      <i class="far fa-clock"></i>
+                      Jan 20, 2020
+                      <span style="padding-left: 10px; padding-right: 10px;">|</span>
+                      <i class="far fa-comment"></i>
+                      Comment: 2
+                    </p>
+                    <hr>
+                  </div>
+                  <div class="from-our-blog-info-title">
+                    <a href="#">
+                      <h3>Easy baking recipes for beginners</h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <section class="head-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="head-footer-title">
+                  <a href=""><img src="Brand.png" alt=""></a>
+                </div>
+                <p>ThemeMu comes with powerful theme options, which empowers you to quickly and easily build incredible
+                  store.</p>
+                <div class=" row head-footer-social-media justify-content-around">
+                  <div class="circle">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </div>
+                  <div class="circle">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </div>
+                  <div class="circle">
+                    <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                  </div>
+                  <div class="circle">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="head-footer-title">
+                  <h2>Contact</h2>
+                </div>
+                <div class="head-footer-contact">
+                  <p><span><i class="fas fa-map-marker-alt"></i> Address: </span>105, B Block, West Street, London, BCA,
+                    UK</p>
+                  <p><span><i class="fas fa-phone-alt"></i> Phone: </span><a href="tel:+84 973 043 445">+84 973 043
+                      445</a></p>
+                  <p><span><i class="far fa-envelope"></i> Email: </span><a
+                      href="mailto:happyfarm@support.com">happyfarm@support.com</a></p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="head-footer-title">
+                  <h2>Recent post</h2>
+                </div>
+                <div class="head-footer-recent">
+                  <div class="row">
+                    <div class="col-4">
+                      <img src="img/hai-tu.jpg" alt="" class="w-100">
+                    </div>
+                    <div class="col-8">
+                      <a href="">
+                        <p>Chào mừng Hải Tú đến với tiệm !</p>
+                      </a>
+                      <small>Jan 20, 2001</small>
+                    </div>
+                    <div class="col-4">
+                      <img src="img/tbt.jpg" alt="" class="w-100">
+                    </div>
+                    <div class="col-8">
+                      <a href="">
+                        <p>Chào mừng Chiều Bảo Thâm đến với tiệm !</p>
+                      </a>
+                      <small>Jan 20, 2001</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="head-footer-title">
+                  <h2>Photo in instagram</h2>
+                </div>
+                <div class="head-footer-title-instagram">
+                  <div class="row">
+                    <div class="col-lg-4 col-6">
+                      <a href=""><img src="img/insta.jpg" alt="" class="w-100"></a>
+                    </div>
+                    <div class="col-lg-4 col-6">
+                      <a href=""><img src="img/insta1.jpg" alt="" class="w-100"></a>
+                    </div>
+                    <div class="col-lg-4 col-6">
+                      <a href=""><img src="img/insta2.png" alt="" class="w-100"></a>
+                    </div>
+                    <div class="col-lg-4 col-6">
+                      <a href=""><img src="img/insta3.jpeg" alt="" class="w-100"></a>
+                    </div>
+                    <div class="col-lg-4 col-6">
+                      <a href=""><img src="img/insta4.jpeg" alt="" class="w-100"></a>
+                    </div>
+                    <div class="col-lg-4 col-6">
+                      <a href=""><img src="img/insta5.jpg" alt="" class="w-100"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="middle-footer">
+              <div class="row">
+                <div class="col-3">
+                  <p>Enter your email to get our</p>
+                  <h3>Recipe of the day</h3>
+                </div>
+                <div class="col-9">
+                  <div class="input-group mt-4">
+                    <input type="text" class="form-control" placeholder="Enter your email"
+                      aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button">Submit <span
+                          style="padding-left: 10px;"></span><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="foot-footer">
+          <div class="container">
+            <div class="row justify-content-between">
+              <div class="col-md-4">
+                <p class="copy-right">Copyright © 2019 Bakery - Designed by ThemeMu</p>
+              </div>
+              <div class="col-md-5 text-right">
+                <div class="else">
+                  <a href="">Contact</a><span style="padding-left: 20px;"></span>
+                  <a href="">Site map</a><span style="padding-left: 20px;"></span>
+                  <a href="">Policy</a><span style="padding-left: 20px;"></span>
+                  <a href="">Term of Use Privacy</a><span style="padding-left: 20px;"></span>
+                  <a href="">Pay</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>
